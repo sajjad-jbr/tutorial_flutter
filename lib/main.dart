@@ -7,24 +7,20 @@ void main() {
 
   runApp(MaterialApp(
     home: Scaffold(
+    backgroundColor: Colors.blueGrey[900],
+    appBar: AppBar(
       backgroundColor: Colors.blueGrey[900],
-      appBar: AppBar(
-        backgroundColor: Colors.blueGrey[900],
-        title: const Text(
-          "I am rich",
-        ),
-        leading: const Center(child: Text('sajjad')),
-        actions: [
-          TextButton(onPressed: onPressed, child: const Text("click me")),
-          TextButton(onPressed: onPressed, child: const Text("click me"))
-        ],
+      title: const Text(
+        "I am rich",
       ),
-      body: const Center(
-        child: Image(
-          image: NetworkImage(
-              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7I665jj0hIYgIjQTiBkFEuXjkOpIPH6nW3ULnCtc&s'),
-        ),
-      ),
+      leading: const Center(child: Text('sajjad')),
+      actions: [
+        TextButton(onPressed: onPressed, child: const Text("click me")),
+        TextButton(onPressed: onPressed, child: const Text("click me"))
+      ],
     ),
-  ));
+    body: const Center(
+      child: Image(image: AssetImage('images/ddd.jpg'))
+    ),
+  )));
 }
