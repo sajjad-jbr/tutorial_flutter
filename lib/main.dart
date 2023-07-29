@@ -6,21 +6,21 @@ void main() {
   }
 
   runApp(MaterialApp(
-    home: Scaffold(
+      home: Scaffold(
     backgroundColor: Colors.blueGrey[900],
     appBar: AppBar(
       backgroundColor: Colors.blueGrey[900],
       title: const Text(
         "I am rich",
       ),
-      leading: const Center(child: Text('sajjad')),
+      leading: const Image(
+        image: AssetImage('images/leadIcon.png'),
+      ),
       actions: [
-        TextButton(onPressed: onPressed, child: const Text("click me")),
-        TextButton(onPressed: onPressed, child: const Text("click me"))
+        TextButton(onPressed: onPressed, child: const Text("Menu 1")),
+        TextButton(onPressed: onPressed, child: const Text("Menu 2"))
       ],
     ),
-    body: const Center(
-      child: Image(image: AssetImage('images/diamond.jpg'))
-    ),
+    body: const Center(child: Image(image: AssetImage('images/diamond.jpg'))),
   )));
 }
