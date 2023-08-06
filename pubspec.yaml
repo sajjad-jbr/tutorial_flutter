@@ -65,6 +65,7 @@ flutter:
   assets:
     - Assets/images/
     - Assets/images/dicee/
+    - Assets/images/8balls/
   fonts:
   - family: Pacifico
     fonts:
